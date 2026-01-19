@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Copy Alert</title>
+</head>
+<body>
+
+  <p id="protectedText">
+    This text is protected. Try copying it.
+  </p>
+
+  <script>
+    document.addEventListener("copy", function (e) {
+      alert("⚠️ Copying content is not allowed!");
+    });
+  </script>
+
+</body>
+</html>

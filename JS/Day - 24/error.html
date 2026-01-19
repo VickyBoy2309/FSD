@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <input type="text" name="number" placeholder="Enter the number" id="number">
+  <button onclick="checknumber()">Click</button>
+  <p id="output"></p>
+
+<script>
+  function checknumber() {
+    try{
+      let value = document.getElementById("number").value;
+      if (value === "") {
+        throw new Error("Input cannot be empty");
+      }
+      if (value < 0) {
+        throw new Error ("Number must be postivie");
+      }
+      if (value == 1){
+        return document.getElementById("output").innerHTML = "heyy heyeyy 1st rankuuu"
+      }
+      if (value == 2){
+        return document.getElementById("output").innerHTML = "yeah well done!!✌️"
+      }
+      if (value == 3){
+        return document.getElementById("output").innerHTML = "you got only 3 , don't show your teeth😑😑"
+      }
+      if (value == 69){
+        return document.getElementById("output").innerHTML = "hoii hoiiiii!!! Naughty Naughty😉😉"
+      }
+      if(isNaN(value)) {
+        throw new Error("Number only allowed")
+      }
+      document.getElementById("output").innerHTML = "Valid Number";
+    }
+    catch (error) {
+    document.getElementById("output").innerHTML = "Error: " +error.message;
+  } 
+    
+  }
+</script>
+</body>
+</html>

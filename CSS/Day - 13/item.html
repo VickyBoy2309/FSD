@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .cont{
+      display:grid;
+      grid-template-columns:2fr 2fr 2fr 3fr 2fr;
+      gap:20px;
+      background:dodgerblue;
+      padding:30px;
+    }
+    .box{
+      background-color:blueviolet;
+      padding:20px;
+      font-size:20px;
+      text-align:center;
+    }
+  </style>
+</head>
+<body>
+  <div class="cont">
+    <div class="box" style="grid-column-start:1;">1</div>
+    <div class="box" style="grid-column-start:2;">2</div>
+    <div class="box" style="grid-column-start:4;">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">5</div>
+  </div>
+</body>
+</html>

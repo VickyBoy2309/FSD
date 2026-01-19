@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    .container {
+        display: flex;
+        gap: 10px;
+        border: 2px solid black;
+        padding: 10px;
+    }
+
+    /* Box A grows normally (1x) */
+    .boxA {
+        flex: 1 1 100px;
+        background: lightcoral;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Box B grows twice as much (2x) */
+    .boxB {
+        flex: 2 1 100px;
+        background: lightgreen;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Box C will not grow but can shrink */
+    .boxC {
+        flex: 0 0 150px;
+        background: lightblue;
+        padding: 20px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<h2>Flex Grow, Shrink, Basis Example</h2>
+
+<div class="container">
+    <div class="boxA">A (1 1 100px)</div>
+    <div class="boxB">B (2 1 100px)</div>
+    <div class="boxC">C (0 0 150px)</div>
+</div>
+
+<p>Resize the browser window to see how they shrink/grow.</p>
+
+</body>
+</html>

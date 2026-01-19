@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+</head>
+<body>
+  
+  <p id="title">Hello World</p>
+
+  <div class="items">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+  </div>
+
+  <script>
+    let title = document.getElementById("title")
+    title.innerText = "I'm Iron Man"
+    title.style.color = "red"
+
+    let item = document.getElementsByClassName("item")
+    for (var i = 0 ; i < item.length ; i++ ) {
+      item[i].style.background = "red"
+      item[i].style.color = "Dodgerblue"
+      item[i].style.border = "2px solid black"
+      item[i].style.border.radius = "2px"
+    }
+  </script>
+</body>
+</html>

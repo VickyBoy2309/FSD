@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Target Attribute Examples</title>
+</head>
+<body>
+
+    <h1>Examples of target attribute in &lt;a&gt; tag</h1>
+
+    <h2>1. target="_self" (default – same tab)</h2>
+    <a href="https://example.com" target="_self">Open in Same Tab</a>
+    <br><br>
+
+    <h2>2. target="_blank" (new tab)</h2>
+    <a href="https://example.com" target="_blank">Open in New Tab</a>
+    <br><br>
+
+    <h2>3. target="_parent" (open in parent frame)</h2>
+    <a href="https://example.com" target="_parent">Open in Parent Frame</a>
+    <br><br>
+
+    <h2>4. target="_top" (break all frames)</h2>
+    <a href="https://example.com" target="_top">Open in Full Window</a>
+    <br><br>
+
+    <h2>5. target="framename" (open inside an iframe)</h2>
+
+    <!-- iframe where the link will open -->
+    <iframe name="myframe" width="400" height="200"></iframe>
+    <br><br>
+
+    <a href="https://example.com" target="myframe">Open in the iframe above</a>
+    <br><br>
+
+</body>
+</html>
